@@ -5,7 +5,7 @@
  The current version of the algorithm is based on the HMAC-sha1 hash-based message authentication code, but future versions can be implemented using other hash functions like SHA256 and SHA512.
 
 ### SHA1 performances on ATMega2560 @ 16MHz clock
-```
+```c
 Test vector: uint8_t message[56] = "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq"
 Iteration: 100
 
