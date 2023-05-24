@@ -33,4 +33,4 @@ HMACsha1test.c:
     gcc -O3 HMACsha1test.c ../../lib/HMACsha1.c ../../lib/sha1.c -o HMACsha1test.exe
 totptest.c:
     gcc -O3 totptest.c ../../lib/totp.c ../../lib/HMACsha1.c ../../lib/sha1.c -o totptest.exe
-    ```
+```
