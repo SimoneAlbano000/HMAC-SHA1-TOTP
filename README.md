@@ -27,6 +27,8 @@ hash: 84983E441C3BD26EBAAE4AA1F95129E5E54670F1
 ### Compile the code
 Compiling instruction for Windows:
 ```
+cd ~tests\tests_windows\
+
 sha1test.c:
     gcc -O3 sha1test.c ../../lib/sha1.c -o sha1test.exe
 HMACsha1test.c:
