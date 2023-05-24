@@ -23,3 +23,14 @@ hash: 84983E441C3BD26EBAAE4AA1F95129E5E54670F1
 ```
 ### SHA1 performances on Dell Latitude 7490: 
 - i5-8350U @ 1.9GHz with 8Gb of ram: 1.124MH/s (with -O3 optimization flag)
+
+### Compile the code
+Compiling instruction for Windows:
+```
+sha1test.c:
+    gcc -O3 sha1test.c ../../lib/sha1.c -o sha1test.exe
+HMACsha1test.c:
+    gcc -O3 HMACsha1test.c ../../lib/HMACsha1.c ../../lib/sha1.c -o HMACsha1test.exe
+totptest.c:
+    gcc -O3 totptest.c ../../lib/totp.c ../../lib/HMACsha1.c ../../lib/sha1.c -o totptest.exe
+    ```
