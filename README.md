@@ -22,7 +22,7 @@ hash: 84983E441C3BD26EBAAE4AA1F95129E5E54670F1
 121.49 H/s, in 0.823128 s
 ```
 ### SHA1 performances on Dell Latitude 7490: 
-- i5-8350U @ 1.9GHz with 8Gb of ram: 1.124MH/s (with -O3 optimization flag)
+- i5-8350U @ 3.45GHz (boost) with 8Gb of ram: 1.124MH/s (with -O3 optimization flag)
 
 ### Compile the code
 Compiling instruction for Windows:
