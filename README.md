@@ -3,7 +3,20 @@ HMAC-SHA1-TOTP Auth Algorithm for Embedded Devices
  
 Implementation of the TOTP authentication algorithm written in C, suitable for Embedded application or other enviroments where a low memory impact is required.
 The current version of the algorithm is based on the HMAC-sha1 hash-based message authentication code, but future versions can be implemented using other hash functions like SHA256 and SHA512.
- 
+
+### Library usage
+```c
+TOTP totp; // Initialize the structure
+uint32_t result = totp_compute(TOTP* totp, uint8_t* key, uint32_t key_length, uint32_t epoch, uint32_t t0, uint32_t t_interval, uint8_t digit);
+```
+```
+where:
+- TOTP* totp is a pointer to the struct
+- key is the secret key in ASCII (not base32) used to perform the TOTP computation
+- key_length is the actual bit length of the key (excluding the NULL char at the end)
+- epoch is the unix-epoch in seconds (seconds passed from 01/01/1970,00:00)
+- t0 is a time factor (the use is described in the implementation, default = 00)
+```
 ### TOTP performances on ATMega2560 @ 16MHz clock
 ```
 Performances with build_flags = -Os:
