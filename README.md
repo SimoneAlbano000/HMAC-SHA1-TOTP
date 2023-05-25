@@ -5,8 +5,20 @@
  The current version of the algorithm is based on the HMAC-sha1 hash-based message authentication code, but future versions can be implemented using other hash functions like SHA256 and SHA512.
  
 ### TOTP performances on ATMega2560 @ 16MHz clock
-
-
+```
+Performances with build_flags = -Os:
+    RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)
+    Flash: [          ]   3.5% (used 8818 bytes from 253952 bytes)
+    Computed TOTP with epoch = 00000001, digit = 6: 755224
+    TOTP per second: 59.22
+    Execution time for 1 TOTP computation: 0.016885s
+Performances with build_flags = -O3:
+    RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)    
+    Flash: [=         ]  10.1% (used 25634 bytes from 253952 bytes)
+    Computed TOTP with epoch = 00000001, digit = 6: 755224
+    TOTP per second: 61.69
+    Execution time for 1 TOTP computation: 0.016209s
+```
 ### SHA1 performances on ATMega2560 @ 16MHz clock
 ```
 Test vector: uint8_t message[56] = "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq"
