@@ -147,6 +147,10 @@ uint32_t* sha1_compute(sha1* hash, uint8_t* message, uint64_t message_length) {
     return hash->H;
 }
 
+void* mempcpy(void *dest, const void *src, size_t len) {
+    return memcpy (dest, src, len) + len;
+}
+
 /* Not used any more, now all arrays are static
 
 bool sha1_init(sha1* hash) {

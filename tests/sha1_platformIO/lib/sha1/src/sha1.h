@@ -65,6 +65,7 @@ bool sha1_init(sha1*);
 void sha1_free(sha1*);
 */
 uint32_t* sha1_compute(sha1*, uint8_t*, uint64_t);
+void* mempcpy(void *, const void *, size_t);
 
 //Macros
 // f(x, y, z, t) -----------------------------------------------
