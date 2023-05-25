@@ -6,8 +6,8 @@ Performances with build_flags = -Os:
     Computed TOTP with epoch = 00000001, key = "12345678901234567890", digit = 6: 755224
     TOTP per second: 59.22
     Execution time for 1 TOTP computation: 0.016885s
-    iterations = 100
 Performances with build_flags = -O3:
+    iterations = 100
     RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)    
     Flash: [=         ]  10.1% (used 25634 bytes from 253952 bytes)
     Computed TOTP with epoch = 00000001, key = "12345678901234567890", digit = 6: 755224
