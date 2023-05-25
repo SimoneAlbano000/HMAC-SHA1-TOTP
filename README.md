@@ -7,17 +7,18 @@
 ### TOTP performances on ATMega2560 @ 16MHz clock
 ```
 Performances with build_flags = -Os:
-    RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)
-    Flash: [          ]   3.5% (used 8818 bytes from 253952 bytes)
-    Computed TOTP with epoch = 00000001, digit = 6: 755224
-    TOTP per second: 59.22
-    Execution time for 1 TOTP computation: 0.016885s
+RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)
+Flash: [          ]   3.5% (used 8818 bytes from 253952 bytes)
+Computed TOTP with epoch = 00000001, digit = 6: 755224
+TOTP per second: 59.22
+Execution time for 1 TOTP computation: 0.016885s
+
 Performances with build_flags = -O3:
-    RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)    
-    Flash: [=         ]  10.1% (used 25634 bytes from 253952 bytes)
-    Computed TOTP with epoch = 00000001, digit = 6: 755224
-    TOTP per second: 61.69
-    Execution time for 1 TOTP computation: 0.016209s
+RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)    
+Flash: [=         ]  10.1% (used 25634 bytes from 253952 bytes)
+Computed TOTP with epoch = 00000001, digit = 6: 755224
+TOTP per second: 61.69
+Execution time for 1 TOTP computation: 0.016209s
 ```
 ### SHA1 performances on ATMega2560 @ 16MHz clock
 ```
@@ -25,8 +26,8 @@ Test vector: uint8_t message[56] = "abcdbcdecdefdefgefghfghighijhijkijkljklmklmn
 Iteration: 100
 
 Computed Hash: (with -Os flag)
-RAM:   [-         ]   3.5% (used 286 bytes from 8192 bytes)
-Flash: [-         ]   2.3% (used 5798 bytes from 253952 bytes)
+RAM:   [=         ]   3.5% (used 286 bytes from 8192 bytes)
+Flash: [=         ]   2.3% (used 5798 bytes from 253952 bytes)
 hash: 84983E441C3BD26EBAAE4AA1F95129E5E54670F1
 119.77 H/s, in 0.834912 s
 
