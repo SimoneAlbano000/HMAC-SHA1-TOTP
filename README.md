@@ -7,6 +7,7 @@ The current version of the algorithm is based on the HMAC-sha1 hash-based messag
 ### TOTP performances on ATMega2560 @ 16MHz clock
 ```
 Performances with build_flags = -Os:
+Iteration: 100
 RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)
 Flash: [          ]   3.5% (used 8818 bytes from 253952 bytes)
 Computed TOTP with epoch = 00000001, digit = 6: 755224
@@ -14,6 +15,7 @@ TOTP per second: 59.22
 Execution time for 1 TOTP computation: 0.016885s
 
 Performances with build_flags = -O3:
+Iteration: 100
 RAM:   [          ]   4.1% (used 332 bytes from 8192 bytes)    
 Flash: [=         ]  10.1% (used 25634 bytes from 253952 bytes)
 Computed TOTP with epoch = 00000001, digit = 6: 755224
