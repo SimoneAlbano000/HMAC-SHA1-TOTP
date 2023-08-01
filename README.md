@@ -7,7 +7,7 @@ The current version of the algorithm is based on the HMAC-sha1 hash-based messag
 ### Library usage
 ```c
 TOTP totp; // Initialize the structure
-uint32_t result = totp_compute(TOTP* totp, uint8_t* key, uint32_t key_length, uint32_t epoch, uint32_t t0, uint32_t t_interval, uint8_t digit);
+void totp_compute(TOTP* totp, uint8_t* key, uint32_t key_length, uint32_t epoch, uint32_t t0, uint32_t t_interval, uint8_t digit, uint8_t* destination_string);
 ```
 ```
 where:
